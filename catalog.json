@@ -1,0 +1,1613 @@
+[
+  {
+    "id": "google",
+    "name": "Google",
+    "url": "https://google.com",
+    "description": "Search the web",
+    "icon_name": "google",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bing",
+    "name": "Bing",
+    "url": "https://bing.com",
+    "description": "Search the web",
+    "icon_name": "bing",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "duckduckgo",
+    "name": "DuckDuckGo",
+    "url": "https://duckduckgo.com",
+    "description": "Search the web",
+    "icon_name": "duckduckgo",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "yahoo",
+    "name": "Yahoo",
+    "url": "https://yahoo.com",
+    "description": "Search the web",
+    "icon_name": "yahoo",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "ecosia",
+    "name": "Ecosia",
+    "url": "https://ecosia.org",
+    "description": "Search the web",
+    "icon_name": "ecosia",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "qwant",
+    "name": "Qwant",
+    "url": "https://qwant.com",
+    "description": "Search the web",
+    "icon_name": "qwant",
+    "category": "Search",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "url": "https://facebook.com",
+    "description": "Social communities and networks",
+    "icon_name": "facebook",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "url": "https://instagram.com",
+    "description": "Social communities and networks",
+    "icon_name": "instagram",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "x",
+    "name": "X (Twitter)",
+    "url": "https://x.com",
+    "description": "See what's happening in the world right now",
+    "icon_name": "x",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "url": "https://linkedin.com",
+    "description": "Social communities and networks",
+    "icon_name": "linkedin",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "reddit",
+    "name": "Reddit",
+    "url": "https://reddit.com",
+    "description": "Join thousands of communities and discussions",
+    "icon_name": "reddit",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "pinterest",
+    "name": "Pinterest",
+    "url": "https://pinterest.com",
+    "description": "Social communities and networks",
+    "icon_name": "pinterest",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "tumblr",
+    "name": "Tumblr",
+    "url": "https://tumblr.com",
+    "description": "Social communities and networks",
+    "icon_name": "tumblr",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "mastodon",
+    "name": "Mastodon",
+    "url": "https://joinmastodon.org",
+    "description": "Social communities and networks",
+    "icon_name": "mastodon",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bluesky",
+    "name": "Bluesky",
+    "url": "https://bsky.app",
+    "description": "Social communities and networks",
+    "icon_name": "bluesky",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "threads",
+    "name": "Threads",
+    "url": "https://threads.net",
+    "description": "Social communities and networks",
+    "icon_name": "threads",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "snapchat",
+    "name": "Snapchat",
+    "url": "https://snapchat.com",
+    "description": "Social communities and networks",
+    "icon_name": "snapchat",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "url": "https://web.whatsapp.com",
+    "description": "Popular messaging app worldwide",
+    "icon_name": "whatsapp",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram",
+    "url": "https://web.telegram.org",
+    "description": "Fast and secure messaging",
+    "icon_name": "telegram",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "signal",
+    "name": "Signal",
+    "url": "https://signal.org",
+    "description": "Messaging and communication",
+    "icon_name": "signal",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "facebookmessenger",
+    "name": "Messenger",
+    "url": "https://messenger.com",
+    "description": "Messaging and communication",
+    "icon_name": "messenger",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "skype",
+    "name": "Skype",
+    "url": "https://skype.com",
+    "description": "Messaging and communication",
+    "icon_name": "skype",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "microsoftteams",
+    "name": "Microsoft Teams",
+    "url": "https://teams.microsoft.com",
+    "description": "Messaging and communication",
+    "icon_name": "microsoftteams",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "url": "https://zoom.us",
+    "description": "Messaging and communication",
+    "icon_name": "zoom",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googlemeet",
+    "name": "Google Meet",
+    "url": "https://meet.google.com",
+    "description": "Messaging and communication",
+    "icon_name": "googlemeet",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "cisco",
+    "name": "Webex",
+    "url": "https://webex.com",
+    "description": "Messaging and communication",
+    "icon_name": "cisco",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "url": "https://slack.com",
+    "description": "Messaging and communication",
+    "icon_name": "slack",
+    "category": "Messaging",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "url": "https://youtube.com",
+    "description": "Watch, share, and discover videos",
+    "icon_name": "youtube",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "url": "https://netflix.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "netflix",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "twitch",
+    "name": "Twitch",
+    "url": "https://twitch.tv",
+    "description": "Video streaming and entertainment",
+    "icon_name": "twitch",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "vimeo",
+    "name": "Vimeo",
+    "url": "https://vimeo.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "vimeo",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "tiktok",
+    "name": "TikTok",
+    "url": "https://tiktok.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "tiktok",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "amazonprime",
+    "name": "Prime Video",
+    "url": "https://primevideo.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "amazonprime",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "disneyplus",
+    "name": "Disney+",
+    "url": "https://disneyplus.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "disneyplus",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "hulu",
+    "name": "Hulu",
+    "url": "https://hulu.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "hulu",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "hbo",
+    "name": "HBO Max",
+    "url": "https://max.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "hbo",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "dailymotion",
+    "name": "Dailymotion",
+    "url": "https://dailymotion.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "dailymotion",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "crunchyroll",
+    "name": "Crunchyroll",
+    "url": "https://crunchyroll.com",
+    "description": "Video streaming and entertainment",
+    "icon_name": "crunchyroll",
+    "category": "Video",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "url": "https://spotify.com",
+    "description": "Music streaming and listening",
+    "icon_name": "spotify",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "applemusic",
+    "name": "Apple Music",
+    "url": "https://music.apple.com",
+    "description": "Music streaming and listening",
+    "icon_name": "applemusic",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "soundcloud",
+    "name": "SoundCloud",
+    "url": "https://soundcloud.com",
+    "description": "Music streaming and listening",
+    "icon_name": "soundcloud",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "pandora",
+    "name": "Pandora",
+    "url": "https://pandora.com",
+    "description": "Music streaming and listening",
+    "icon_name": "pandora",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "deezer",
+    "name": "Deezer",
+    "url": "https://deezer.com",
+    "description": "Music streaming and listening",
+    "icon_name": "deezer",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "tidal",
+    "name": "Tidal",
+    "url": "https://tidal.com",
+    "description": "Music streaming and listening",
+    "icon_name": "tidal",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bandcamp",
+    "name": "Bandcamp",
+    "url": "https://bandcamp.com",
+    "description": "Music streaming and listening",
+    "icon_name": "bandcamp",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "audiomack",
+    "name": "Audiomack",
+    "url": "https://audiomack.com",
+    "description": "Music streaming and listening",
+    "icon_name": "audiomack",
+    "category": "Music",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googledocs",
+    "name": "Google Docs",
+    "url": "https://docs.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googledocs",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googlesheets",
+    "name": "Google Sheets",
+    "url": "https://sheets.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googlesheets",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googleslides",
+    "name": "Google Slides",
+    "url": "https://slides.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googleslides",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googledrive",
+    "name": "Google Drive",
+    "url": "https://drive.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googledrive",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googlecalendar",
+    "name": "Google Calendar",
+    "url": "https://calendar.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googlecalendar",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googlekeep",
+    "name": "Google Keep",
+    "url": "https://keep.google.com",
+    "description": "Productivity and office tools",
+    "icon_name": "googlekeep",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "microsoftoffice",
+    "name": "Microsoft Office",
+    "url": "https://office.com",
+    "description": "Productivity and office tools",
+    "icon_name": "microsoftoffice",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "microsoftoutlook",
+    "name": "Outlook",
+    "url": "https://outlook.com",
+    "description": "Productivity and office tools",
+    "icon_name": "microsoftoutlook",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "onedrive",
+    "name": "OneDrive",
+    "url": "https://onedrive.com",
+    "description": "Productivity and office tools",
+    "icon_name": "onedrive",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "microsoftword",
+    "name": "Word",
+    "url": "https://word.cloud.microsoft",
+    "description": "Productivity and office tools",
+    "icon_name": "microsoftword",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "microsoftexcel",
+    "name": "Excel",
+    "url": "https://excel.cloud.microsoft",
+    "description": "Productivity and office tools",
+    "icon_name": "microsoftexcel",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "url": "https://notion.so",
+    "description": "All-in-one workspace",
+    "icon_name": "notion",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "evernote",
+    "name": "Evernote",
+    "url": "https://evernote.com",
+    "description": "Productivity and office tools",
+    "icon_name": "evernote",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "url": "https://github.com",
+    "description": "Code hosting and collaboration platform",
+    "icon_name": "github",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "url": "https://gitlab.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "gitlab",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bitbucket",
+    "name": "Bitbucket",
+    "url": "https://bitbucket.org",
+    "description": "Developer tools and platforms",
+    "icon_name": "bitbucket",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "stackoverflow",
+    "name": "Stack Overflow",
+    "url": "https://stackoverflow.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "stackoverflow",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "url": "https://docker.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "docker",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "url": "https://kubernetes.io",
+    "description": "Developer tools and platforms",
+    "icon_name": "kubernetes",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "npm",
+    "name": "NPM",
+    "url": "https://npmjs.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "npm",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "pypi",
+    "name": "PyPI",
+    "url": "https://pypi.org",
+    "description": "Developer tools and platforms",
+    "icon_name": "pypi",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "visualstudiocode",
+    "name": "Visual Studio Code",
+    "url": "https://code.visualstudio.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "visualstudiocode",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "intellijidea",
+    "name": "IntelliJ IDEA",
+    "url": "https://jetbrains.com/idea",
+    "description": "Developer tools and platforms",
+    "icon_name": "intellijidea",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "url": "https://postman.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "postman",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "url": "https://mongodb.com",
+    "description": "Developer tools and platforms",
+    "icon_name": "mongodb",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "url": "https://redis.io",
+    "description": "Developer tools and platforms",
+    "icon_name": "redis",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "url": "https://postgresql.org",
+    "description": "Developer tools and platforms",
+    "icon_name": "postgresql",
+    "category": "Dev",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "url": "https://dropbox.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "dropbox",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "box",
+    "name": "Box",
+    "url": "https://box.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "box",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "mega",
+    "name": "MEGA",
+    "url": "https://mega.nz",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "mega",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "pcloud",
+    "name": "pCloud",
+    "url": "https://pcloud.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "pcloud",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "backblaze",
+    "name": "Backblaze",
+    "url": "https://backblaze.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "backblaze",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "nextcloud",
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "nextcloud",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "protondrive",
+    "name": "Proton Drive",
+    "url": "https://proton.me/drive",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "protondrive",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "wetransfer",
+    "name": "WeTransfer",
+    "url": "https://wetransfer.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "wetransfer",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "sync",
+    "name": "Sync",
+    "url": "https://sync.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "sync",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "icloud",
+    "name": "iCloud",
+    "url": "https://icloud.com",
+    "description": "Cloud storage and file sharing",
+    "icon_name": "icloud",
+    "category": "Cloud Storage",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "url": "https://figma.com",
+    "description": "Collaborative interface design tool",
+    "icon_name": "figma",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "url": "https://canva.com",
+    "description": "Design and creative tools",
+    "icon_name": "canva",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "adobephotoshop",
+    "name": "Adobe Photoshop",
+    "url": "https://adobe.com/products/photoshop",
+    "description": "Design and creative tools",
+    "icon_name": "adobephotoshop",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "adobeillustrator",
+    "name": "Adobe Illustrator",
+    "url": "https://adobe.com/products/illustrator",
+    "description": "Design and creative tools",
+    "icon_name": "adobeillustrator",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "adobexd",
+    "name": "Adobe XD",
+    "url": "https://adobe.com/products/xd",
+    "description": "Design and creative tools",
+    "icon_name": "adobexd",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "sketch",
+    "name": "Sketch",
+    "url": "https://sketch.com",
+    "description": "Design and creative tools",
+    "icon_name": "sketch",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "invision",
+    "name": "InVision",
+    "url": "https://invisionapp.com",
+    "description": "Design and creative tools",
+    "icon_name": "invision",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "behance",
+    "name": "Behance",
+    "url": "https://behance.net",
+    "description": "Design and creative tools",
+    "icon_name": "behance",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "dribbble",
+    "name": "Dribbble",
+    "url": "https://dribbble.com",
+    "description": "Design and creative tools",
+    "icon_name": "dribbble",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "unsplash",
+    "name": "Unsplash",
+    "url": "https://unsplash.com",
+    "description": "Design and creative tools",
+    "icon_name": "unsplash",
+    "category": "Design",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "url": "https://amazon.com",
+    "description": "Online shopping and stores",
+    "icon_name": "amazon",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "ebay",
+    "name": "eBay",
+    "url": "https://ebay.com",
+    "description": "Online shopping and stores",
+    "icon_name": "ebay",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "etsy",
+    "name": "Etsy",
+    "url": "https://etsy.com",
+    "description": "Online shopping and stores",
+    "icon_name": "etsy",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "url": "https://shopify.com",
+    "description": "Online shopping and stores",
+    "icon_name": "shopify",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "walmart",
+    "name": "Walmart",
+    "url": "https://walmart.com",
+    "description": "Online shopping and stores",
+    "icon_name": "walmart",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "target",
+    "name": "Target",
+    "url": "https://target.com",
+    "description": "Online shopping and stores",
+    "icon_name": "target",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bestbuy",
+    "name": "Best Buy",
+    "url": "https://bestbuy.com",
+    "description": "Online shopping and stores",
+    "icon_name": "bestbuy",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "url": "https://aliexpress.com",
+    "description": "Online shopping and stores",
+    "icon_name": "aliexpress",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "wish",
+    "name": "Wish",
+    "url": "https://wish.com",
+    "description": "Online shopping and stores",
+    "icon_name": "wish",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "wayfair",
+    "name": "Wayfair",
+    "url": "https://wayfair.com",
+    "description": "Online shopping and stores",
+    "icon_name": "wayfair",
+    "category": "Shopping",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal",
+    "url": "https://paypal.com",
+    "description": "Finance and banking services",
+    "icon_name": "paypal",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "url": "https://stripe.com",
+    "description": "Finance and banking services",
+    "icon_name": "stripe",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "venmo",
+    "name": "Venmo",
+    "url": "https://venmo.com",
+    "description": "Finance and banking services",
+    "icon_name": "venmo",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "wise",
+    "name": "Wise",
+    "url": "https://wise.com",
+    "description": "Finance and banking services",
+    "icon_name": "wise",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "url": "https://coinbase.com",
+    "description": "Finance and banking services",
+    "icon_name": "coinbase",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "binance",
+    "name": "Binance",
+    "url": "https://binance.com",
+    "description": "Finance and banking services",
+    "icon_name": "binance",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "robinhood",
+    "name": "Robinhood",
+    "url": "https://robinhood.com",
+    "description": "Finance and banking services",
+    "icon_name": "robinhood",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "revolut",
+    "name": "Revolut",
+    "url": "https://revolut.com",
+    "description": "Finance and banking services",
+    "icon_name": "revolut",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "cashapp",
+    "name": "Cash App",
+    "url": "https://cash.app",
+    "description": "Finance and banking services",
+    "icon_name": "cashapp",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "patreon",
+    "name": "Patreon",
+    "url": "https://patreon.com",
+    "description": "Finance and banking services",
+    "icon_name": "patreon",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "kickstarter",
+    "name": "Kickstarter",
+    "url": "https://kickstarter.com",
+    "description": "Finance and banking services",
+    "icon_name": "kickstarter",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "gofundme",
+    "name": "GoFundMe",
+    "url": "https://gofundme.com",
+    "description": "Finance and banking services",
+    "icon_name": "gofundme",
+    "category": "Finance",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "booking",
+    "name": "Booking",
+    "url": "https://booking.com",
+    "description": "Travel planning and booking",
+    "icon_name": "bookingdotcom",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "url": "https://airbnb.com",
+    "description": "Travel planning and booking",
+    "icon_name": "airbnb",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "expedia",
+    "name": "Expedia",
+    "url": "https://expedia.com",
+    "description": "Travel planning and booking",
+    "icon_name": "expedia",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "tripadvisor",
+    "name": "TripAdvisor",
+    "url": "https://tripadvisor.com",
+    "description": "Travel planning and booking",
+    "icon_name": "tripadvisor",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "skyscanner",
+    "name": "Skyscanner",
+    "url": "https://skyscanner.com",
+    "description": "Travel planning and booking",
+    "icon_name": "skyscanner",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "googlemaps",
+    "name": "Google Maps",
+    "url": "https://maps.google.com",
+    "description": "Travel planning and booking",
+    "icon_name": "googlemaps",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "uber",
+    "name": "Uber",
+    "url": "https://uber.com",
+    "description": "Travel planning and booking",
+    "icon_name": "uber",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "lyft",
+    "name": "Lyft",
+    "url": "https://lyft.com",
+    "description": "Travel planning and booking",
+    "icon_name": "lyft",
+    "category": "Travel",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "coursera",
+    "name": "Coursera",
+    "url": "https://coursera.org",
+    "description": "Learning and education",
+    "icon_name": "coursera",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "udemy",
+    "name": "Udemy",
+    "url": "https://udemy.com",
+    "description": "Learning and education",
+    "icon_name": "udemy",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "khanacademy",
+    "name": "Khan Academy",
+    "url": "https://khanacademy.org",
+    "description": "Learning and education",
+    "icon_name": "khanacademy",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo",
+    "url": "https://duolingo.com",
+    "description": "Learning and education",
+    "icon_name": "duolingo",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "edx",
+    "name": "edX",
+    "url": "https://edx.org",
+    "description": "Learning and education",
+    "icon_name": "edx",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "wikipedia",
+    "name": "Wikipedia",
+    "url": "https://wikipedia.org",
+    "description": "Learning and education",
+    "icon_name": "wikipedia",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "brilliant",
+    "name": "Brilliant",
+    "url": "https://brilliant.org",
+    "description": "Learning and education",
+    "icon_name": "brilliant",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "quizlet",
+    "name": "Quizlet",
+    "url": "https://quizlet.com",
+    "description": "Learning and education",
+    "icon_name": "quizlet",
+    "category": "Education",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "url": "https://store.steampowered.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "steam",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "epicgames",
+    "name": "Epic Games",
+    "url": "https://epicgames.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "epicgames",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "playstation",
+    "name": "PlayStation",
+    "url": "https://playstation.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "playstation",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "xbox",
+    "name": "Xbox",
+    "url": "https://xbox.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "xbox",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "nintendo",
+    "name": "Nintendo",
+    "url": "https://nintendo.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "nintendo",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "roblox",
+    "name": "Roblox",
+    "url": "https://roblox.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "roblox",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "minecraft",
+    "name": "Minecraft",
+    "url": "https://minecraft.net",
+    "description": "Gaming and entertainment",
+    "icon_name": "minecraft",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "origin",
+    "name": "Origin",
+    "url": "https://ea.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "origin",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "gogdotcom",
+    "name": "GOG",
+    "url": "https://gog.com",
+    "description": "Gaming and entertainment",
+    "icon_name": "gogdotcom",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "battlenet",
+    "name": "Battle.net",
+    "url": "https://battle.net",
+    "description": "Gaming and entertainment",
+    "icon_name": "battledotnet",
+    "category": "Gaming",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "medium",
+    "name": "Medium",
+    "url": "https://medium.com",
+    "description": "News, books and reading",
+    "icon_name": "medium",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "substack",
+    "name": "Substack",
+    "url": "https://substack.com",
+    "description": "News, books and reading",
+    "icon_name": "substack",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "quora",
+    "name": "Quora",
+    "url": "https://quora.com",
+    "description": "News, books and reading",
+    "icon_name": "quora",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "goodreads",
+    "name": "Goodreads",
+    "url": "https://goodreads.com",
+    "description": "News, books and reading",
+    "icon_name": "goodreads",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "imdb",
+    "name": "IMDb",
+    "url": "https://imdb.com",
+    "description": "News, books and reading",
+    "icon_name": "imdb",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "flipboard",
+    "name": "Flipboard",
+    "url": "https://flipboard.com",
+    "description": "News, books and reading",
+    "icon_name": "flipboard",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "feedly",
+    "name": "Feedly",
+    "url": "https://feedly.com",
+    "description": "News, books and reading",
+    "icon_name": "feedly",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "pocket",
+    "name": "Pocket",
+    "url": "https://getpocket.com",
+    "description": "News, books and reading",
+    "icon_name": "pocket",
+    "category": "Reading",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "gmail",
+    "name": "Gmail",
+    "url": "https://gmail.com",
+    "description": "Email and communication",
+    "icon_name": "gmail",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "protonmail",
+    "name": "Proton Mail",
+    "url": "https://proton.me/mail",
+    "description": "Email and communication",
+    "icon_name": "protonmail",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "tutanota",
+    "name": "Tutanota",
+    "url": "https://tutanota.com",
+    "description": "Email and communication",
+    "icon_name": "tuta",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "fastmail",
+    "name": "Fastmail",
+    "url": "https://fastmail.com",
+    "description": "Email and communication",
+    "icon_name": "fastmail",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "hey",
+    "name": "Hey",
+    "url": "https://hey.com",
+    "description": "Email and communication",
+    "icon_name": "hey",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "zohomail",
+    "name": "Zoho Mail",
+    "url": "https://zoho.com/mail",
+    "description": "Email and communication",
+    "icon_name": "zoho",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "mailfence",
+    "name": "Mailfence",
+    "url": "https://mailfence.com",
+    "description": "Email and communication",
+    "icon_name": "mailfence",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "skiff",
+    "name": "Skiff",
+    "url": "https://skiff.com",
+    "description": "Email and communication",
+    "icon_name": "skiff",
+    "category": "Email",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "trello",
+    "name": "Trello",
+    "url": "https://trello.com",
+    "description": "Collaboration and project management",
+    "icon_name": "trello",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "url": "https://asana.com",
+    "description": "Collaboration and project management",
+    "icon_name": "asana",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "jira",
+    "name": "Jira",
+    "url": "https://atlassian.com/software/jira",
+    "description": "Collaboration and project management",
+    "icon_name": "jira",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "monday",
+    "name": "Monday",
+    "url": "https://monday.com",
+    "description": "Collaboration and project management",
+    "icon_name": "monday",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "clickup",
+    "name": "ClickUp",
+    "url": "https://clickup.com",
+    "description": "Collaboration and project management",
+    "icon_name": "clickup",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "basecamp",
+    "name": "Basecamp",
+    "url": "https://basecamp.com",
+    "description": "Collaboration and project management",
+    "icon_name": "basecamp",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist",
+    "url": "https://todoist.com",
+    "description": "Collaboration and project management",
+    "icon_name": "todoist",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "url": "https://linear.app",
+    "description": "Collaboration and project management",
+    "icon_name": "linear",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "miro",
+    "name": "Miro",
+    "url": "https://miro.com",
+    "description": "Collaboration and project management",
+    "icon_name": "miro",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "url": "https://obsidian.md",
+    "description": "Collaboration and project management",
+    "icon_name": "obsidian",
+    "category": "Collaboration",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "url": "https://nordvpn.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "nordvpn",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "url": "https://expressvpn.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "expressvpn",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "protonvpn",
+    "name": "Proton VPN",
+    "url": "https://protonvpn.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "protonvpn",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "mullvad",
+    "name": "Mullvad",
+    "url": "https://mullvad.net",
+    "description": "Security, VPN and password tools",
+    "icon_name": "mullvad",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "url": "https://1password.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "1password",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "bitwarden",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "lastpass",
+    "name": "LastPass",
+    "url": "https://lastpass.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "lastpass",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "dashlane",
+    "name": "Dashlane",
+    "url": "https://dashlane.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "dashlane",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "malwarebytes",
+    "name": "Malwarebytes",
+    "url": "https://malwarebytes.com",
+    "description": "Security, VPN and password tools",
+    "icon_name": "malwarebytes",
+    "category": "Security",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "url": "https://discord.com",
+    "description": "Gaming and community voice chat platform",
+    "icon_name": "discord",
+    "category": "Social",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com",
+    "description": "AI-powered conversation assistant",
+    "icon_name": "openai",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "photopea",
+    "name": "Photopea",
+    "url": "https://photopea.com",
+    "description": "Advanced photo editing in your browser",
+    "icon_name": "photopea",
+    "category": "Design",
+    "icon_source": "favicon"
+  }
+]
