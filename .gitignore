@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Project-specific
+.workbuddy/
+# 临时排查脚本与失败产物，不入库
+_inspect.mjs
+_probe.mjs
+_gen_preview.mjs
+_ico.mjs
+_raw_*.bin
+icons/_p_*.png

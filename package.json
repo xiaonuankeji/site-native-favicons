@@ -1,0 +1,14 @@
+{
+  "name": "site-native-favicons",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Independent favicon project for site-native: generates 128x128 PNGs from catalog.json, deployed to CDN.",
+  "scripts": {
+    "gen": "node gen-favicons.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "undici": "^6.19.8"
+  }
+}

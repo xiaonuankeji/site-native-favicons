@@ -1602,6 +1602,15 @@
     "icon_source": "favicon"
   },
   {
+    "id": "gemini",
+    "name": "Gemini",
+    "url": "https://gemini.google.com",
+    "description": "Google AI assistant",
+    "icon_name": "gemini",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
     "id": "photopea",
     "name": "Photopea",
     "url": "https://photopea.com",
