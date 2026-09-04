@@ -528,7 +528,7 @@
     "description": "Productivity and office tools",
     "icon_name": "evernote",
     "category": "Productivity",
-    "icon_source": "favicon"
+    "icon_source": "manual"
   },
   {
     "id": "github",
@@ -1607,6 +1607,15 @@
     "url": "https://gemini.google.com",
     "description": "Google AI assistant",
     "icon_name": "gemini",
+    "category": "Productivity",
+    "icon_source": "favicon"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "url": "https://www.deepseek.com",
+    "description": "AI-powered reasoning and chat assistant",
+    "icon_name": "deepseek",
     "category": "Productivity",
     "icon_source": "favicon"
   },

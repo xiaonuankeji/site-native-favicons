@@ -18,14 +18,17 @@
 //     全部抓下来，按真实像素宽择优，不偏袒 apple-touch。
 //   - ICON_OVERRIDES 提供「站点 id -> 显式图标直链」覆盖：命中后直接用这张图、跳过上述抓取链
 //     （用于 favicon 服务只能给到小图、但官网另有清晰品牌图的站点，如 tiktok）。
-//     支持栅格 / ICO / SVG 直链：ICO 会在 tryNormalize 内自动抽出内嵌的 PNG 帧再交给 sharp，
-//     SVG 由 sharp 直接栅格化；不引入额外依赖。
+//     支持栅格 / ICO / SVG 直链：ICO 会在 tryNormalize 内先抽内嵌的 PNG 帧、抽不到再解 DIB/BMP 帧（如 deepseek 的 favicon.ico），
+//     再交给 sharp 栅格化；SVG 由 sharp 直接栅格化；不引入额外依赖。
 //     bitbucket 官网 favicon 是内联 SVG（无 URL 可抓），走 ICON_SVG_OVERRIDES 处理。
+//   - 手动钉住图标：catalog 中 icon_source === "manual" 的站点（如 evernote，其 PNG 由用户手动编辑），
+//     生成器原样保留 icons/{id}.png，跳过包括内联 SVG 覆盖在内的全部来源，绝不重新抓取或重栅格化。
 //   - 任一阵营成功即归一化落盘；全部失败则该站点在本项目中无图标（主应用会回退到品牌字形 / 首字母）。
 //   - 失败会被分级记录（网络错误 / HTTP 状态码 / content-type 不符 / 解码失败），
 //     并写入临时报告文件，方便排查是网络问题还是源本身没有可用图标。
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
@@ -53,6 +56,7 @@ const ICON_OVERRIDES = {
   gmail: 'https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_gmail_2026_v2.ico',
   googledocs: 'https://ssl.gstatic.com/docs/documents/images/docs-favicon-2026-v2.ico',
   gemini: 'https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg',
+  deepseek: 'https://www.deepseek.com/favicon.ico',
 };
 
 // 站点 id -> 内联 SVG 字符串。官网 favicon 是矢量且无可用栅格直链时使用（如 bitbucket）。
@@ -230,6 +234,74 @@ function maybeExtractIcoPng(buf) {
   return best ? Buffer.from(best.frame) : buf;
 }
 
+// 解析 ICO 容器里的 DIB/BMP 内嵌帧（无 PNG 帧、纯 BMP 的 .ico，如 deepseek 的 favicon.ico）。
+// 返回 { width, height, raw: RGBA Buffer } 供 sharp 以 raw 输入栅格化；不支持调色板（<=8bpp）。
+// 仅处理 32/24bpp 真彩帧；ICO 的 32bpp 帧是预乘 alpha，这里按像素反预乘回直线 alpha（不透明像素无副作用）。
+function decodeIcoDib(ico) {
+  if (
+    ico.length < 22 ||
+    ico[0] !== 0x00 ||
+    ico[1] !== 0x00 ||
+    ico[2] !== 0x01 ||
+    ico[3] !== 0x00
+  )
+    return null;
+  const count = ico.readUInt16LE(4);
+  let best = null;
+  for (let i = 0; i < count && i < 256; i++) {
+    const o = 6 + i * 16;
+    if (o + 16 > ico.length) break;
+    const w = ico[o] === 0 ? 256 : ico[o];
+    const h = ico[o + 1] === 0 ? 256 : ico[o + 1];
+    const bitCount = ico.readUInt16LE(o + 6);
+    const bytesInRes = ico.readUInt32LE(o + 8);
+    const imageOffset = ico.readUInt32LE(o + 12);
+    if (!bytesInRes || imageOffset + bytesInRes > ico.length) continue;
+    if (bitCount !== 32 && bitCount !== 24) continue; // 仅处理无调色板的真彩帧
+    const data = ico.subarray(imageOffset, imageOffset + bytesInRes);
+    const hdrSize = data.readUInt32LE(0);
+    const bw = data.readUInt32LE(4);
+    const compression = data.readUInt32LE(16);
+    if (compression !== 0) continue; // 仅 BI_RGB
+    const channels = bitCount / 8;
+    const stride = (bw * channels + 3) & ~3;
+    const realH = h; // ICO 中可能 biHeight=2*h（含 AND 掩码），真实高取 entry 的 h
+    if (hdrSize + realH * stride > data.length) continue;
+    const px = Buffer.alloc(bw * realH * 4);
+    for (let y = 0; y < realH; y++) {
+      const srcRow = hdrSize + y * stride; // ICO 自顶向下存储
+      const dstRow = y * bw * 4;
+      for (let x = 0; x < bw; x++) {
+        const s = srcRow + x * channels;
+        const d = dstRow + x * 4;
+        if (channels === 4) {
+          let a = data[s + 3];
+          let r = data[s + 2];
+          let g = data[s + 1];
+          let b = data[s];
+          if (a > 0 && a < 255) {
+            // 反预乘 alpha
+            r = Math.min(255, Math.round((r * 255) / a));
+            g = Math.min(255, Math.round((g * 255) / a));
+            b = Math.min(255, Math.round((b * 255) / a));
+          }
+          px[d] = r;
+          px[d + 1] = g;
+          px[d + 2] = b;
+          px[d + 3] = a;
+        } else {
+          px[d] = data[s + 2];
+          px[d + 1] = data[s + 1];
+          px[d + 2] = data[s];
+          px[d + 3] = 255;
+        }
+      }
+    }
+    if (!best || w > best.width) best = { width: w, height: realH, raw: px };
+  }
+  return best;
+}
+
 async function tryNormalize(buf) {
   try {
     const src = maybeExtractIcoPng(buf);
@@ -243,7 +315,23 @@ async function tryNormalize(buf) {
       .toBuffer();
     return { png, width: meta.width || 0 };
   } catch {
-    return null;
+    // PNG-in-ICO 解不出时，再试 DIB/BMP 内嵌帧（如 deepseek / evernote 的 favicon.ico）。
+    const dib = decodeIcoDib(buf);
+    if (!dib) return null;
+    try {
+      const png = await sharp(dib.raw, {
+        raw: { width: dib.width, height: dib.height, channels: 4 },
+      })
+        .resize(SIZE, SIZE, {
+          fit: 'contain',
+          background: { r: 0, g: 0, b: 0, alpha: 0 },
+        })
+        .png()
+        .toBuffer();
+      return { png, width: dib.width };
+    } catch {
+      return null;
+    }
   }
 }
 
@@ -326,6 +414,10 @@ async function run() {
   await mkdir(outDir, { recursive: true });
 
   const targets = sites.filter((s) => s && s.id && s.url && domainOf(s.url));
+
+  // 手动钉住的图标：catalog 中 icon_source === "manual" 的站点，其 PNG 由人工制作，
+  // 生成器必须原样保留、不得用 Google s2 / 官网抓取 / 内联 SVG 覆盖去替换。
+  const manualIds = new Set(sites.filter((s) => s && s.icon_source === 'manual').map((s) => s.id));
   console.log(`\nSites to process: ${targets.length} (catalog has ${sites.length})\n`);
 
   const ok = [];
@@ -339,6 +431,22 @@ async function run() {
       const domain = domainOf(site.url);
       let best = null; // { png, width }
       const perSource = [];
+
+      // 0) 手动钉住：用户手动编辑的图标，原样保留、跳过一切抓取与覆盖。
+      if (manualIds.has(site.id)) {
+        const manualPath = path.join(outDir, `${site.id}.png`);
+        if (existsSync(manualPath)) {
+          ok.push(site.id);
+          continue;
+        }
+        // 手动图标文件丢失：不回退到网络抓取（那会违背“手动、不替换”的意图），仅记录缺失。
+        failed.push(site.id);
+        report.push({
+          id: site.id, domain, url: site.url, reason: 'manual-icon-missing',
+          perSource: [{ src: 'manual-pin', result: 'manual-icon-missing' }],
+        });
+        continue;
+      }
 
       // 0a) 内联 SVG 覆盖（官网 favicon 为矢量、且无可用栅格直链的站点，如 bitbucket）。
       //     命中后直接栅格化落盘、跳过所有网络抓取；栅格化失败则回退到通用链。
